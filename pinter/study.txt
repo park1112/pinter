@@ -26,6 +26,8 @@ py manage.py migrate            ##만들어 준다
 
 ## git 설명서
 .gitignore  # 파일을 생성해줘서 쓸대없이 패치되는 파일들을 정리해준다 .
+git status          #무엇을 업로드해줄것인지 알려준다 .
+
 
 ## 장고
 pip install django-environ

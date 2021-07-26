@@ -79,4 +79,10 @@ venv/
 
 db.sqlite3
 
-.idea/
+.idea/vcs.xml
+
+pinter/__pycache__/
+
+accountapp/__pycache__/
+
+

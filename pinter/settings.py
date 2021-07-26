@@ -67,7 +67,7 @@ ROOT_URLCONF = 'pinter.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],      ##8강 추가함!
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

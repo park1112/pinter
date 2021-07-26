@@ -20,8 +20,8 @@ add+ 해서 추가 해야됨
 
 
 ## manage.py 설명서
-py manage.py makemigrations     ##정리해준다
-py manage.py migrate            ##만들어 준다
+py manage.py makemigrations     ## 파이썬파일을 만들어준다
+py manage.py migrate            ## db와 연동시작
 
 
 ## git 설명서
@@ -69,3 +69,16 @@ rem = 이걸로 많이 한다 !!!
 ## 13강 css display 속성
 style="display: inline;" 12강의 css설명을 다시 보여준다 .
 
+## 14강 드디어 model 시작!
+class 만들고 시작
+새로운 시트를 만들어서 저장하고 연동한다 .
+settings.py 에 DATABASE에 db위치가 어딘인지 알수 있다 .
+
+## 15강 get post 차이
+get : 무엇을 보여줘 ! ?:파라미터 (파라미터는 시작한다 )
+post : create , update 무엇을 만들거나 업데이터 할때 한다 .
+
+## 16강 get post 프로토콜 실습
+get 과 post 를 사용하여 화면에 표시
+
+## 17강

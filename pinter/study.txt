@@ -81,4 +81,20 @@ post : create , update 무엇을 만들거나 업데이터 할때 한다 .
 ## 16강 get post 프로토콜 실습
 get 과 post 를 사용하여 화면에 표시
 
-## 17강
+## 17강 post 통신을 이용한 db작업 시작
+
+## 29강 슈퍼유저 만들기
+python manage.py createsuperuser        #슈퍼유저 만들기
+미디어 관련된 pip 설치 해야됨
+pip install pillow
+
+## 30강 프로필 구현
+1:1로 하나의 아이디에 하나의 프로필만 있다
+프로필만 따로 볼수 있는 디테일 웹은 만들지 않는다
+1. python manage.py startapp profileapp
+2. seetings.py 에 installed_apps 에 만들어진 앱이름을 추가한다 .
+3. urls.py 에 urlpatterns 에 프로파일 앱의 경로를 지정해준다 .
+4. profileapp 폴더에 urls.py 파일을 만들고 내용입력한다
+5. profileapp 폴더에 models.py에 모델을 새로 만들다. (유저특성(1:1),이미지,닉네임,메시지, 등등)
+6. 폼을 만든다 . 기존의 model폼을 가지고올 forms.py를 만들어준다 .
+

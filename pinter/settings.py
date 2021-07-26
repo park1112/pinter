@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'accountapp',
+    'profileapp',       ## 30강 추가 !!
 ]
 
 MIDDLEWARE = [
@@ -142,3 +143,8 @@ STATICFILES_DIRS = [        ##추가함 11강
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+MEDIA_URL = '/media/'       ## 29강 추가 인터넷에 열었을때 어디경로로 열릴것인지
+
+MEDAI_ROOT = os.path.join(BASE_DIR, 'media')     ## 29강 추가 ! 파일을 올렸을경우에 파일을 저장할 곳

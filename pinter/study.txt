@@ -1,0 +1,31 @@
+가상환경 셋팅 (파이참)
+
+셋팅에서 pragmatic
+add+ 해서 추가 해야됨
+1. pip에 아무것도 없기 때문에 pip install django 로 장고를 설치해줌
+2. phthon manage.py runserver 서버 실행으로 확인
+
+#새로운 앱 만들기
+1. python manage.py startapp accountapp
+2. 메인-settings.py 에 새로 만든 앱의 이름을 넣어준다 .(installed_apps)에 추가 한다 .
+3. views.py 에 보여질 내용을 넣는다
+4. urls.py 를 통해서 admin, account, 등 urls들을 설정해준다
+5. accountapp/urls.py 를 만들어서 내용을 입력한다 .
+
+
+
+## 가상환결 설명서
+1. 가상환경 실행 : source myvenv/bin/activate.
+2. 서버 실행 : python manage.py runserver
+
+
+## manage.py 설명서
+py manage.py makemigrations     ##정리해준다
+py manage.py migrate            ##만들어 준다
+
+
+## git 설명서
+.gitignore  # 파일을 생성해줘서 쓸대없이 패치되는 파일들을 정리해준다 .
+
+## 장고
+pip install django-environ

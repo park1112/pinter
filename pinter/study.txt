@@ -29,7 +29,7 @@ py manage.py migrate            ##만들어 준다
 git status          #무엇을 업로드해줄것인지 알려준다 .
 git commit -m "내용추가"
 git push origin master      ##내저장소로 이동!!
-
+git reset --hard HEAD       ##가장 최근의 commit한 상태로 되돌아간다 .
 
 ## 장고
 pip install django-environ
@@ -43,4 +43,29 @@ settings.py에서  templates=[ 수정해준다 ]
 ## head.html 파일 생성 9강
 새로운 head.html 파일을 만들어서 include 함수를 사용해서 불러온다
 해더 부분만 수정하면 include를 사용하는 모든곳에 내용이 변경된다 . 작업효율성 확대
+base.html 수정
+head.html 수정
+footer.html 생성
+header.html 생성
+accountapp 폴더 생성 hello_world.html 생성
+views.py 에 hello_world.html 연결완료
+
+## 10강 디자인하기
+head.html 에 푸트스크랩css링크를 붙여넣어 불러온다 .
+
+## 11강 static설정 및 css파일분리
+settings.py 에 static_root =  구분을 추가해준다
+
+## 12강 css설명
+block = 밑으로 쌓인다
+inline = 옆으로 쌓인다
+inline-block = 블록인데 옆으로 쌓인다 .
+none = 존재하지 않다. 아무것도 없다
+hidden = 존재한다 보이지않을뿐
+# 사이즈 설명
+px = 픽셀 고정 !
+rem = 이걸로 많이 한다 !!!
+
+## 13강 css display 속성
+style="display: inline;" 12강의 css설명을 다시 보여준다 .
 

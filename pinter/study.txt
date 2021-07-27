@@ -82,6 +82,13 @@ post : create , update 무엇을 만들거나 업데이터 할때 한다 .
 get 과 post 를 사용하여 화면에 표시
 
 ## 17강 post 통신을 이용한 db작업 시작
+포스트 데이터를 보내고 받고 해서 서버에서 저장하기 까지 입니다 .
+hello_world.html ,
+views.py
+models.py 추가 하여 객체를 가져올수 있게 만든다
+
+
+
 
 ## 29강 슈퍼유저 만들기
 python manage.py createsuperuser        #슈퍼유저 만들기
@@ -97,4 +104,26 @@ pip install pillow
 4. profileapp 폴더에 urls.py 파일을 만들고 내용입력한다
 5. profileapp 폴더에 models.py에 모델을 새로 만들다. (유저특성(1:1),이미지,닉네임,메시지, 등등)
 6. 폼을 만든다 . 기존의 model폼을 가지고올 forms.py를 만들어준다 .
+
+## 31강 프로필 구현 1
+1. python manage.py makemigrations 저번강의에서 만든 모델을 db와 연동 시켜준다
+2. python manage.py migrate ## db 생성!
+
+## 34강 magicGrid 소개및 aricleapp 생성
+템플릿앱에 아티클 앱 폴더 생성 - list.html 생성
+
+##39강 모바일 디버깅 반응형 레이아웃 만들기
+
+
+## 43강 구독서비스
+구독한 게시물 모두 가지고 오기
+field lookups =
+
+## 44강 wysiwyg
+
+## 46강 docker
+가상화 언제 어디환경에서 모두 빠르게 할수 있다
+
+## 47강 가상서버대여
+도커를 이용해서 가상서버 셋팅을 할수가 있다 !
 

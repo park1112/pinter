@@ -1,9 +1,11 @@
+from django.contrib.auth.models import User
 from django.db import models
 
 # Create your models here.
 
 
-class Profile(models,Model):
+
+class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='profile')
                 # OneToOneField (다대다, 하나의 유저에 하나의 프로필만 가능)
                 # on_delete=models.CASCADE, ** 유저가 삭제되면 데이터도 같이 삭제된다 **

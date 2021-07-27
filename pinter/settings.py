@@ -16,6 +16,8 @@ from pathlib import Path
 import environ
 
 ## env 추가 !
+from django.urls import reverse_lazy
+
 env = environ.Env(
     DEBUG=(bool, False)
 )
@@ -50,6 +52,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'accountapp',
+    'bootstrap4',
     'profileapp',       ## 30강 추가 !!
 ]
 
@@ -138,6 +141,9 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')     ##추가 11강
 STATICFILES_DIRS = [        ##추가함 11강
     BASE_DIR / "static",
 ]
+
+LOGIN_REDIRECT_URL = reverse_lazy('accountapp:hello_world')     ##22강 로그인추가
+LOGOUT_REDIRECT_URL = reverse_lazy('accountapp:login')          ##22강 로그아웃 추가
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field

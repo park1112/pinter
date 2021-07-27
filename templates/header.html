@@ -7,7 +7,29 @@
             <span>nav1</span>
             <span>nav2</span>
             <span>nav3</span>
-            <span>nav4</span>
 
+            <!--if 문 생성 만약 로그인이 되어있으면 로그인을 보여줄것이고 로그인이 안되어있으면 로그아웃을 보여줘라 -->
+            {% if not user.is_authenticated %}
+
+            <!-- 현재위치의 url을 next에 가져와서 로그인 후 next 위치로 이동 -->
+            <a href="{% url 'accountapp:login' %}?next={{ request.path }}">
+
+                <span>login</span>
+            </a>
+            <a href="{% url 'accountapp:create' %}">
+
+                <span>회원가입</span>
+            </a>
+            {% else %}
+             <!-- 24강 유저의 정보를 가져온다 디테이뷰 추가  -->
+            <a href="{% url 'accountapp:detail' pk=user.pk %}">
+                <span>Mypage</span>
+            </a>
+
+
+            <a href="{% url 'accountapp:logout' %}?next={{ request.path }}">
+                <span>logout</span>
+            </a>
+            {% endif %}
         </div>
     </div>

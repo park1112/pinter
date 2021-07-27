@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+
+{% block content %}
+
+  <div style="text-align: center; max-width: 500px; margin: 4rem auto">
+    <form action="{% url 'accountapp:create' %}" method="post">
+      <h4>회원 가입</h4>
+      {% csrf_token %}
+
+      {% bootstrap_form form %}   <!-- views.py에 지정한 폼클래스를 가지고 온다 -->
+      <input type="submit" class="btn btn-primary btn-lg btn-block col-6 mt-3">
+    </form>
+
+
+  </div>
+
+{% endblock %}

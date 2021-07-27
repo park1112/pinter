@@ -87,6 +87,54 @@ hello_world.html ,
 views.py
 models.py 추가 하여 객체를 가져올수 있게 만든다
 
+## 19강 파이참 디버깅 설정
+패스 맥버전이라서 안됨 ;;
+
+## 20강 crud 등등 이론강의
+
+## 21강 createView 를 통한 회원가입 만들기 26강 까지
+accountapp-views.py 에 새로운 클래스틑 만든다
+accountapp-urls.py 에 경로를 지정해준다.
+create.html 생성후 회원가입폼을 가지고 온다 .
+
+두 차이는 ?
+reverse_lazy : 함수형에 뷰 사용
+reverse : 클래스용 뷰에 사용
+
+
+## 22강 로그인뷰 로그아웃 뷰 구현하기
+accountapp-urls.py 에 생성할 login , logout의 대한 경로를 지정해준다.
+login.html 생성
+logout.html 생성
+메인 템플릿-header.html 에서 로그인창으로 바로갈수있는 링크 수정
+settings.py에 로그인 로그아웃 부분 추가
+
+## 23강 bootstrap 을 이용해서 form을 꾸며보자
+pinter park$ pip install django-bootstrap4
+settings.py 에 INSTALLED_APPS 에 bootstrap4 라고 추가해야된다.
+{% load bootstrap4 %} 사용 login파일에 셋팅
+
+## 24강 디테일 뷰 만들기
+views.py 에 디테일 뷰 만들기 (정보화면)
+urls.py 에 위치 지정하기
+
+## 25강 업데이트 만들기
+views.py 에 업데이트 뷰 만들기 (정보화면)
+urls.py 에 위치 지정하기
+update.html 만들어서 설정
+detail.html 에 회원정보 수정 버튼 만들기
+accountapp-forms.py 새로 만들기
+    아이디 수정할수 없게 수정함 커스트마이징 폼으로 수정함.
+
+## 26강 delete 생성
+views.py 에 업데이트 뷰 만들기 (정보화면)
+urls.py 에 위치 지정하기
+update.html 만들어서 설정
+detail.html 에 회원정보 수정 버튼 만들기
+회원가입 칸 만들기
+
+
+
 
 
 

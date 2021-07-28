@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     'profileapp',       ## 30강 추가 !!
     'bootstrap4',
     'articleapp',      ## 34강 추가 !!
+    'commentapp',       ##37강 추가 !!
 
 
 ]

@@ -207,6 +207,16 @@ articleapp.forms.py 를 생성 및 입력해준다
 
 ##36강 페이지 내이션 강의
 infinite scroll 방식은 js를 배워야 한다 검색해보자 (페이스북 인스타 핀터레스트)
+실제 메인 페이지를 만들었다 .
+
+
+## 37강 댓글을 만들자
+mixin <두가지폼을 한꺼번에 볼수 있다>
+디테일뷰와 코멘트 뷰를 한꺼번에 만들수 있다 .
+
+1.셋팅 -main.urls - app.urls - views - models - forms
+2.makemigrations - migrate - db까지 추가 끝!
+3. 모든셋팅 끝 폼
 
 
 

@@ -23,5 +23,6 @@ urlpatterns = [
     path('accounts/', include('accountapp.urls')),
     path('profiles/', include('profileapp.urls')),       ## 30강 추가 !
     path('articles/', include('articleapp.urls')),       ## 34강 추가 !
+    path('comments/', include('commentapp.urls')),       ## 37강 추가 !
     
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

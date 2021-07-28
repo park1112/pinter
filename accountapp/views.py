@@ -1,16 +1,21 @@
+from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
 
 # Create your views here.
+from django.utils.decorators import method_decorator
 from django.views.generic import CreateView, DetailView, UpdateView, DeleteView
 
+from accountapp.decorators import account_ownership_required
 from accountapp.forms import AccountUpdateForm
 from accountapp.models import HelloWorld
 from django.urls import reverse, reverse_lazy
 
+has_ownership = [account_ownership_required, login_required]        ##28강 2줄 코드를 1줄로 줄이기
 
+@login_required
 def hello_world(request):
 
     if request.method == "POST":
@@ -44,6 +49,10 @@ class AccountDetailView(DetailView):
     template_name = 'accountapp/detail.html'
 
 
+##      28강 데코레이터 추가
+@method_decorator(has_ownership, 'get')        ## 28강 추가 메소드 데코레이터 가져오기
+@method_decorator(has_ownership, 'post')       ## 데코레이터는 클래스에서 사용가능한데 메소드에서 가능한 테코레이터 가져오기
+
 ## 25강 업데이트뷰
 class AccountUpdateView(UpdateView):        ## django에 (UpdateView)를 가지고 온다
     model = User
@@ -51,6 +60,11 @@ class AccountUpdateView(UpdateView):        ## django에 (UpdateView)를 가지�
     form_class = AccountUpdateForm   ## 원하는 폼을 가지고 온다 html파일과 연결시켜서 사용함 create.html {{ form }} 으로 사용
     success_url = reverse_lazy('accountapp:hello_world')    #계정 만들기에 성공하면 어디로 이동할것인가 ?
     template_name = 'accountapp/update.html'          ## 회원가입할때 볼 템플릿을 설정해준다
+
+
+##      28강 데코레이터 추가
+@method_decorator(has_ownership, 'get')        ## 28강 추가 메소드 데코레이터 가져오기
+@method_decorator(has_ownership, 'post')       ## 데코레이터는 클래스에서 사용가능한데 메소드에서 가능한 테코레이터 가져오기
 
 ## 26강 delete
 class AccountDeleteView(DeleteView):        ##이것도 가지고 온다

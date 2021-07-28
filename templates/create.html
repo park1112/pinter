@@ -1,11 +1,11 @@
-{% extend 'base.html' %}
+{% extends 'base.html' %}
 {% load bootstrap4 %}
 
 {% block content %}
 
     <div style="text-align: center; max-sidth: 500px; margin: 4rem auto">
         <div class="mb-4">
-            <h4>Profil Create</h4>
+            <h3>Profil Create</h3>
         </div>
         <form action="{% url 'profileapp:create' %}" method="post">
             {% csrf_token %}
@@ -15,4 +15,3 @@
     </div>
 
 {% endblock %}
-

@@ -5,12 +5,12 @@
 
   <div style="text-align: center; max-width: 500px; margin: 4rem auto">
     <div>
-      <h4>회원 가입</h4>
+      <h4>프로필 정보 수정</h4>
     </div>
-    <form action="{% url 'accountapp:create' %}" method="post">
+    <form action="{% url 'profileapp:update' pk=target_profile.pk %}" method="post" enctype="multipart/form-data">
       {% csrf_token %}
       {% bootstrap_form form %}   <!-- views.py에 지정한 폼클래스를 가지고 온다 -->
-      <input type="submit" class="btn btn-primary btn-lg btn-block col-6 mt-3">
+      <input type="submit" class="btn btn-dark rounded-pill col-6 mt-3">
     </form>
 
 

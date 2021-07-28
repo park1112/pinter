@@ -199,6 +199,12 @@ main-urls.py  에서
 템플릿앱에 아티클 앱 폴더 생성 - list.html 생성
 매직 그리드를 사용해서 메뉴를 만들면 된다 .
 
+## 35강 articleapp.models.py 오류 수정 강의
+
+## 36강 articleapp. 모델 만들기
+articleapp.models.py 에 내용을 삽입해준다 . 제목, 이미지, 글, 시간
+articleapp.forms.py 를 생성 및 입력해준다
+
 
 
 ##39강 모바일 디버깅 반응형 레이아웃 만들기

@@ -205,6 +205,10 @@ main-urls.py  에서
 articleapp.models.py 에 내용을 삽입해준다 . 제목, 이미지, 글, 시간
 articleapp.forms.py 를 생성 및 입력해준다
 
+##36강 페이지 내이션 강의
+infinite scroll 방식은 js를 배워야 한다 검색해보자 (페이스북 인스타 핀터레스트)
+
+
 
 
 ##39강 모바일 디버깅 반응형 레이아웃 만들기

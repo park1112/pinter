@@ -4,3 +4,14 @@
 .snp_header_logo {
     font-family: 'Monoton', cursive;
 }
+
+.snp_header {
+    text-align:center;
+    margin: 2rem 0;
+}
+
+@media screen and (max-width:500px) {
+    html {
+        font-size: 13px;
+    }
+}
